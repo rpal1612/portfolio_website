@@ -1,0 +1,932 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Home | Riya's Portfolio</title>
+    <!-- Add this meta tag inside the <head> section of your HTML file -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <nav>
+        <div><a href="index.html">Riya's Portfolio</a></div>
+        <div>
+            <a href="#home-section">Home</a>
+            <a href="#about">About Me</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#experience">Experience</a>
+            <a href="#contact">Contact Me</a>
+        </div>
+    </nav>
+
+    <section id="home-section" class="home-section">
+        <div class="home-content">
+            <div class="text-content">
+                <h1>Hi, My name is <span class="highlight">Riya Pal</span></h1>
+                <h2>I'm a passionate
+                    <div>
+                        <span id="element" class="highlight"></span>
+                    </div>
+                </h2>
+
+                <div class="button-group">
+                    <button id="download-resume" class="btn">Download Resume</button>
+                    <button id="visit-github" class="btn">Visit Github</button>
+                </div>
+            </div>
+
+            <div class="image-content">
+                <img src="profile_img3.jpg" alt="Riya's Photo">
+            </div>
+        </div>
+    </section>
+
+    <section id="about"
+        style="display: flex; align-items: center; justify-content: center; padding: 80px 10%; gap: 80px; flex-wrap: wrap;">
+        <!-- Left Side: Image -->
+        <div style="flex: 1; min-width: 300px; display: flex; justify-content: center;">
+            <img src="profile_img2.jpg" alt="About Me"
+                style="width: 100%; max-width: 350px; height: auto; border-radius: 15px; object-fit: cover;" />
+        </div>
+
+        <!-- Right Side: Text -->
+        <div style="flex: 2; min-width: 300px;">
+            <h2 style="font-size: 32px; margin-bottom: 20px;">About Me</h2>
+            <p style="line-height: 1.8; margin-bottom: 20px;">
+                Hi, I'm Riya Pal, a passionate and driven Information Technology undergraduate (B.Tech, graduating
+                2026) with a stellar GPA of 9.9 up to Semester 5. I’m a technology enthusiast and an aspiring software
+                developer who thrives on turning innovative ideas into impactful digital experiences.
+            </p>
+            <p style="line-height: 1.8; margin-bottom: 20px;">
+                I specialize in web development, app development, DevOps, and machine learning, with a strong foundation
+                in programming and software engineering principles.With a hands-on approach and a collaborative mindset,
+                I’ve contributed to multiple internships and personal projects that reflect my commitment to continuous
+                learning and real-world problem solving. I value curiosity, adaptability, and teamwork, and I’m always
+                exploring new tools, frameworks, and technologies to stay ahead in this ever-evolving industry.
+            </p>
+            <p style="line-height: 1.8; margin-bottom: 20px;">
+                Beyond the code, I’m a firm believer in innovation through collaboration and the power of technology to
+                make a difference. I'm excited to connect, create, and contribute to meaningful projects that challenge
+                the norm and drive positive change.
+            </p>
+            <p style="line-height: 1.8; margin-bottom: 20px;">
+                Let’s build something great together!
+            </p>
+            <h3 style="margin-top: 30px;">Experience: <span style="font-weight: normal;">Fresher</span></h3>
+        </div>
+    </section>
+
+    <!-- Skills Section with Category Tabs and Carousel -->
+    <section class="skills-section" id="skills">
+        <h2 class="section-title">Skills</h2>
+
+        <!-- Category Tabs -->
+        <div class="skills-tabs">
+            <button class="tab-btn active" data-category="frontend">Frontend</button>
+            <button class="tab-btn" data-category="backend">Backend</button>
+            <button class="tab-btn" data-category="database">Databases</button>
+            <button class="tab-btn" data-category="devops">DevOps</button>
+            <button class="tab-btn" data-category="mobile">Mobile</button>
+        </div>
+
+        <!-- Skills Content -->
+        <div class="skills-content">
+            <!-- Frontend Skills -->
+            <div class="skills-category active" id="frontend">
+                <div class="skills-carousel">
+                    <div class="carousel-container">
+                        <div class="skill-item">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+                                alt="HTML5">
+                            <span>HTML</span>
+                        </div>
+                        <div class="skill-item">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
+                                alt="CSS3">
+                            <span>CSS</span>
+                        </div>
+                        <div class="skill-item">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+                                alt="JavaScript">
+                            <span>JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-nav">
+                    <button class="prev-btn"><i class="fas fa-chevron-left"></i></button>
+                    <div class="carousel-dots"></div>
+                    <button class="next-btn"><i class="fas fa-chevron-right"></i></button>
+                </div>
+            </div>
+
+            <!-- Backend Skills -->
+            <div class="skills-category" id="backend">
+                <div class="skills-carousel">
+                    <div class="carousel-container">
+                        <div class="skill-item">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
+                                alt="Node.js">
+                            <span>Node.js</span>
+                        </div>
+                        <div class="skill-item">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg"
+                                alt="Express.js">
+                            <span>Express.js</span>
+                        </div>
+                        <div class="skill-item">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
+                                alt="Python">
+                            <span>Python</span>
+                        </div>
+                        <div class="skill-item">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg"
+                                alt="Java">
+                            <span>Java</span>
+                        </div>
+                        <div class="skill-item">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" alt="C">
+                            <span>C</span>
+                        </div>
+                        <div class="skill-item">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg"
+                                alt="C++">
+                            <span>C++</span>
+                        </div>
+                        <div class="skill-item">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/r/r-original.svg" alt="R">
+                            <span>R</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-nav">
+                    <button class="prev-btn"><i class="fas fa-chevron-left"></i></button>
+                    <div class="carousel-dots"></div>
+                    <button class="next-btn"><i class="fas fa-chevron-right"></i></button>
+                </div>
+            </div>
+
+            <!-- Database Skills -->
+            <div class="skills-category" id="database">
+                <div class="skills-carousel">
+                    <div class="carousel-container">
+                        <div class="skill-item">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg"
+                                alt="MySQL">
+                            <span>MySQL</span>
+                        </div>
+                        <div class="skill-item">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg"
+                                alt="MongoDB">
+                            <span>MongoDB</span>
+                        </div>
+                        <div class="skill-item">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg"
+                                alt="PostgreSQL">
+                            <span>PostgreSQL</span>
+                        </div>
+                        <div class="skill-item">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-original.svg"
+                                alt="Firebase">
+                            <span>Firebase</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-nav">
+                    <button class="prev-btn"><i class="fas fa-chevron-left"></i></button>
+                    <div class="carousel-dots"></div>
+                    <button class="next-btn"><i class="fas fa-chevron-right"></i></button>
+                </div>
+            </div>
+
+            <!-- DevOps Skills -->
+            <div class="skills-category" id="devops">
+                <div class="skills-carousel">
+                    <div class="carousel-container">
+                        <div class="skill-item">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"
+                                alt="Git">
+                            <span>Git</span>
+                        </div>
+                        <div class="skill-item">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
+                                alt="GitHub">
+                            <span>GitHub</span>
+                        </div>
+                        <div class="skill-item">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg"
+                                alt="Docker">
+                            <span>Docker</span>
+                        </div>
+                        <div class="skill-item">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jenkins/jenkins-original.svg"
+                                alt="Jenkins">
+                            <span>Jenkins</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-nav">
+                    <button class="prev-btn"><i class="fas fa-chevron-left"></i></button>
+                    <div class="carousel-dots"></div>
+                    <button class="next-btn"><i class="fas fa-chevron-right"></i></button>
+                </div>
+            </div>
+
+            <!-- Mobile Skills -->
+            <div class="skills-category" id="mobile">
+                <div class="skills-carousel">
+                    <div class="carousel-container">
+                        <div class="skill-item">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-original.svg"
+                                alt="Flutter">
+                            <span>Flutter</span>
+                        </div>
+                        <div class="skill-item">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg"
+                                alt="Flask">
+                            <span>Flask</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-nav">
+                    <button class="prev-btn"><i class="fas fa-chevron-left"></i></button>
+                    <div class="carousel-dots"></div>
+                    <button class="next-btn"><i class="fas fa-chevron-right"></i></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="projects-section" id="projects">
+        <div class="projects-content">
+            <h2 class="section-title"><span class="black">Projects</span></h2>
+            <div class="projects-grid">
+
+                <!-- Project 1 -->
+                <div class="project-card" data-aos="fade-up">
+                    <h3>Rentronix</h3>
+                    <p>A full-stack web application offering a platform for users to rent electronic gadgets, furniture,
+                        and daily utility products. Includes real-time chat support, secure payment integration, and
+                        user authentication.</p>
+                    <a href="https://github.com/rpal1612/Rentronix.git" target="_blank" class="btn project-btn">View on
+                        GitHub</a>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card" data-aos="fade-up" data-aos-delay="100">
+                    <h3>Traffic Sign Detection</h3>
+                    <p>Computer vision project that detects traffic signs from videos using OpenCV and Machine Learning
+                        models.</p>
+                    <a href="https://github.com/rpal1612/TrafficSignAI.git" target="_blank" class="btn project-btn">View
+                        on
+                        GitHub</a>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card" data-aos="fade-up" data-aos-delay="200">
+                    <h3>Customer Churn Prediction</h3>
+                    <p>Predict customer churn using a hybrid model combining Random Forests and Bayesian Networks with
+                        interpretability.</p>
+                    <a href="https://github.com/rpal1612/Customer_churn_prediction.git" target="_blank"
+                        class="btn project-btn">View on GitHub</a>
+                </div>
+
+                <div class="project-card" data-aos="fade-up" data-aos-delay="200">
+                    <h3>Intruder Alert System</h3>
+                    <p>A smart security solution using machine learning and OpenCV to detect unauthorized access. The
+                        system triggers real-time alerts and logs the intruder's activity using a webcam or CCTV input.
+                    </p>
+                    <a href="https://github.com/rpal1612/IntruderAlertSystem.git" target="_blank"
+                        class="btn project-btn">View on GitHub</a>
+                </div>
+
+                <div class="project-card" data-aos="fade-up" data-aos-delay="300">
+                    <h3>Advanced Criminal Management System</h3>
+                    <p>A database-driven system for managing criminal records using advanced SQL features like triggers,
+                        fragmentation, and temporal databases. Supports quick search, case tracking, and secure record
+                        handling.</p>
+                    <a href="https://github.com/rpal1612/crimes_data_hub.git" target="_blank"
+                        class="btn project-btn">View on GitHub</a>
+                </div>
+
+                <div class="project-card" data-aos="fade-up" data-aos-delay="400">
+                    <h3> Responsive E-commerce Backend Application</h3>
+                    <p>Designed and built a scalable backend for an online shopping platform using Node.js, Express, and
+                        MongoDB. Handles user authentication, product management, cart operations, and order tracking
+                        with RESTful APIs.
+                    </p>
+                    <a href="https://github.com/rpal1612/Ecommerce_Application.git" target="_blank"
+                        class="btn project-btn">View on GitHub</a>
+                </div>
+
+                <div class="project-card" data-aos="fade-up" data-aos-delay="300">
+                    <h3> Human Pose Estimation System</h3>
+                    <p>An AI-powered application built with Python, OpenCV, and BlazePose that detects and tracks human
+                        body keypoints in images and videos. Supports live webcam feed analysis with an intuitive
+                        Streamlit interface.</p>
+                    <a href="https://github.com/rpal1612/Human_Pose_Estimation.git" target="_blank"
+                        class="btn project-btn">View on GitHub</a>
+                </div>
+
+                <div class="project-card" data-aos="fade-up" data-aos-delay="400">
+                    <h3>Adidas Sales Analysis Project</h3>
+                    <p>Performed deep data visualization and business insights extraction on Adidas sales data using
+                        Python. Created interactive dashboards and predictive models to drive sales strategy decisions.
+                    </p>
+                    <a href="https://github.com/rpal1612/Adidas_Sales_Analysis-.git" target="_blank"
+                        class="btn project-btn">View on GitHub</a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="experience-section" id="experience">
+        <div class="experience-content">
+            <h2 class="section-title">Work Experience</h2>
+            <div class="timeline">
+                <!-- current experience-->
+                <div class="timeline-item right" data-aos="fade-up">
+                    <div class="timeline-icon">📌</div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>ML Intern</h3>
+                            <span class="company">Cognitio</span>
+                            <span class="period">Apr 2025– Current</span>
+                        </div>
+                        <div class="timeline-body">
+                            <ul>
+                                <li>I'm currently working on a Traffic Sign Recognition AI project that uses deep
+                                    learning to accurately identify and classify road signs from images. </li>
+                                <li>The model leverages YOLO (You Only Look Once) for real-time object detection,
+                                    ensuring high-speed and efficient performance.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- Experience 1 -->
+                <div class="timeline-item left" data-aos="fade-up" data-aos-delay="100">
+                    <div class="timeline-icon">📊</div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Data Analyst Intern</h3>
+                            <span class="company">Uptoskills</span>
+                            <span class="period">Dec 2024 – Mar 2025</span>
+                        </div>
+                        <div class="timeline-body">
+                            <ul>
+                                <li>Developed analytics solutions and BI tools in collaboration with a team.</li>
+                                <li>Designed and implemented databases and dashboards to provide actionable insights.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Experience 2 -->
+                <div class="timeline-item right" data-aos="fade-up" data-aos-delay="200">
+                    <div class="timeline-icon">🤖</div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>AI Intern</h3>
+                            <span class="company">AICTE & Edunet Foundation</span>
+                            <span class="period">Dec 2024 – Jan 2025</span>
+                        </div>
+                        <div class="timeline-body">
+                            <ul>
+                                <li>Developed a Human Pose Estimation System using MediaPipe and OpenCV.</li>
+                                <li>Created a Streamlit application to visualize pose detection from images and videos.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Experience 3 -->
+                <div class="timeline-item left" data-aos="fade-up" data-aos-delay="300">
+                    <div class="timeline-icon">🧠</div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Machine Learning Intern</h3>
+                            <span class="company">Utkarsh Minds</span>
+                            <span class="period">Jul 2024 – Oct 2024</span>
+                        </div>
+                        <div class="timeline-body">
+                            <ul>
+                                <li>Developed an intruder detection system using Machine Learning and computer vision.
+                                </li>
+                                <li>Contributed to model research, development, and provided technical support.</li>
+                                <li>Actively participated in code reviews, design sessions, and project demonstrations.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- Experience 4 -->
+                <div class="timeline-item right" data-aos="fade-up" data-aos-delay="400">
+                    <div class="timeline-icon">💻</div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Digital Publicity Co-Head</h3>
+                            <span class="company"> ITSA-VIT</span>
+                            <span class="period">Jun 2023 – Aug 2024</span>
+                        </div>
+                        <div class="timeline-body">
+                            <ul>
+                                <li>Handled the Content Creation Team and digital media presence of committee </li>
+                                <li>Participated in Digital publicity of events, capturing the events and managing
+                                    social media platforms of ITSA</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact-section" id="contact">
+        <div class="contact-container">
+            <h2 class="section-title">Get In Touch</h2>
+
+            <div class="contact-content">
+                <div class="contact-cards-grid">
+                    <!-- Email Card -->
+                    <div class="contact-card" data-aos="fade-up">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <h3>Email Me</h3>
+                        <p>riya.pal1629@gmail.com</p>
+                        <a href="mailto:riya.pal1629@gmail.com" class="contact-link">Send Email</a>
+                    </div>
+                    <!-- LinkedIn Card -->
+                    <div class="contact-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="contact-icon">
+                            <i class="fab fa-linkedin-in"></i>
+                        </div>
+                        <h3>LinkedIn</h3>
+                        <p>Connect with me professionally</p>
+                        <a href="https://www.linkedin.com/in/riya-pal-95705225a" target="_blank"
+                            class="contact-link">View Profile</a>
+                    </div>
+
+                    <!-- GitHub Card -->
+                    <div class="contact-card" data-aos="fade-up" data-aos-delay="300">
+                        <div class="contact-icon">
+                            <i class="fab fa-github"></i>
+                        </div>
+                        <h3>GitHub</h3>
+                        <p>Check out my projects</p>
+                        <a href="https://github.com/rpal1612" target="_blank" class="contact-link">View Repositories</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Updated Footer without newsletter and with only LinkedIn and GitHub -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-about">
+                <h3>Riya Pal</h3>
+                <p>Thankyou For Visiting My Portfolio. Feel free to connect with me for any opportunities or
+                    collaborations.</p>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/riya-pal-95705225a" target="_blank" class="social-icon">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="https://github.com/rpal1612" target="_blank" class="social-icon">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2025 Riya Pal. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Add Font Awesome for icons if not already included -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            // Typed.js initialization
+            var typed = new Typed('#element', {
+                strings: ['Software Developer', 'AIML Enthusiast', 'Web Developer'],
+                typeSpeed: 50,
+                backSpeed: 30,
+                backDelay: 1500,
+                loop: true
+            });
+
+            // Buttons
+            const downloadButton = document.querySelector("#download-resume");
+            const githubButton = document.querySelector("#visit-github");
+
+            if (!downloadButton || !githubButton) {
+                console.error("One or both buttons are missing!");
+                return;
+            }
+
+            downloadButton.addEventListener("click", function () {
+                const link = document.createElement("a");
+                link.href = "Riya Pal_Resume2.pdf";
+                link.download = "resume.pdf";
+                document.body.appendChild(link);
+                link.click();
+                document.body.removeChild(link);
+            });
+
+            githubButton.addEventListener("click", function () {
+                const githubURL = "https://github.com/rpal1612";
+                window.open(githubURL, "_blank");
+            });
+        });
+
+        // Email and phone validations
+        function validateEmail(email) {
+            const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            return emailPattern.test(email);
+        }
+
+        function validatePhoneNumber(phoneNumber) {
+            const phonePattern = /^\d{10}$/;
+            return phonePattern.test(phoneNumber);
+        }
+        // Add this to your existing script.js or at the end of your HTML file
+        document.addEventListener("DOMContentLoaded", function () {
+            // Get all timeline items
+            const timelineItems = document.querySelectorAll('.timeline-item');
+
+            // Add touch event for mobile devices
+            timelineItems.forEach(item => {
+                const content = item.querySelector('.timeline-content');
+
+                // For touch devices
+                content.addEventListener('touchstart', function () {
+                    // Remove active class from all other items
+                    document.querySelectorAll('.timeline-content').forEach(el => {
+                        if (el !== this) el.classList.remove('active');
+                    });
+
+                    // Toggle active class on this item
+                    this.classList.toggle('active');
+
+                    // If active, show the description
+                    if (this.classList.contains('active')) {
+                        const body = this.querySelector('.timeline-body');
+                        body.style.maxHeight = body.scrollHeight + "px";
+                        body.style.opacity = "1";
+                        body.style.marginTop = "0.8rem";
+                    }
+                });
+
+                // Add hover effect for the timeline icons
+                const icon = item.querySelector('.timeline-icon');
+                icon.addEventListener('mouseover', function () {
+                    this.style.transform = 'scale(1.2) rotate(10deg)';
+                });
+
+                icon.addEventListener('mouseout', function () {
+                    this.style.transform = 'scale(1) rotate(0deg)';
+                });
+            });
+        });
+        //newww js 
+        document.addEventListener("DOMContentLoaded", function () {
+            // Tab functionality
+            const tabButtons = document.querySelectorAll('.tab-btn');
+            const skillsCategories = document.querySelectorAll('.skills-category');
+
+            // Store carousel data centrally
+            const carousels = new Map();
+
+            tabButtons.forEach(button => {
+                button.addEventListener('click', function () {
+                    // Remove active class from all buttons
+                    tabButtons.forEach(btn => btn.classList.remove('active'));
+                    // Add active class to clicked button
+                    this.classList.add('active');
+
+                    // Hide all categories
+                    skillsCategories.forEach(category => category.classList.remove('active'));
+
+                    // Show the selected category
+                    const categoryId = this.getAttribute('data-category');
+                    const category = document.getElementById(categoryId);
+                    category.classList.add('active');
+
+                    // Update the carousel for the active category
+                    updateCarouselPosition(category);
+                });
+            });
+
+            // Initialize all carousels once
+            skillsCategories.forEach(category => {
+                setupCarousel(category);
+            });
+
+            // One global resize handler instead of multiple
+            let resizeTimeout;
+            window.addEventListener('resize', () => {
+                // Debounce resize event
+                clearTimeout(resizeTimeout);
+                resizeTimeout = setTimeout(() => {
+                    skillsCategories.forEach(category => {
+                        if (category.classList.contains('active')) {
+                            recalculateCarousel(category);
+                            updateCarouselPosition(category);
+                        }
+                    });
+                }, 250); // Wait 250ms after resize ends before recalculating
+            });
+
+            // Setup carousel controls and initial state
+            function setupCarousel(categoryElement) {
+                const container = categoryElement.querySelector('.carousel-container');
+                const items = categoryElement.querySelectorAll('.skill-item');
+                const prevBtn = categoryElement.querySelector('.prev-btn');
+                const nextBtn = categoryElement.querySelector('.next-btn');
+                const dotsContainer = categoryElement.querySelector('.carousel-dots');
+
+                // Initialize carousel data
+                carousels.set(categoryElement.id, {
+                    container,
+                    items,
+                    currentPage: 0,
+                    itemWidth: items.length > 0 ? items[0].offsetWidth + 20 : 0, // item width + gap
+                    itemsPerView: 0,
+                    pageCount: 0
+                });
+
+                // Calculate initial values
+                recalculateCarousel(categoryElement);
+
+                // Create initial dots
+                createDots(categoryElement);
+
+                // Set up navigation
+                prevBtn.addEventListener('click', () => {
+                    const carousel = carousels.get(categoryElement.id);
+                    if (carousel.currentPage > 0) {
+                        carousel.currentPage--;
+                        updateCarouselPosition(categoryElement);
+                    }
+                });
+
+                nextBtn.addEventListener('click', () => {
+                    const carousel = carousels.get(categoryElement.id);
+                    if (carousel.currentPage < carousel.pageCount - 1) {
+                        carousel.currentPage++;
+                        updateCarouselPosition(categoryElement);
+                    }
+                });
+
+                // Touch support for swiping
+                let touchStartX = 0;
+                let touchEndX = 0;
+
+                container.addEventListener('touchstart', (e) => {
+                    touchStartX = e.changedTouches[0].screenX;
+                });
+
+                container.addEventListener('touchend', (e) => {
+                    touchEndX = e.changedTouches[0].screenX;
+                    handleSwipe(categoryElement);
+                });
+
+                function handleSwipe(categoryElement) {
+                    const carousel = carousels.get(categoryElement.id);
+                    const swipeThreshold = 50;
+
+                    if (touchStartX - touchEndX > swipeThreshold) {
+                        // Swipe left
+                        if (carousel.currentPage < carousel.pageCount - 1) {
+                            carousel.currentPage++;
+                            updateCarouselPosition(categoryElement);
+                        }
+                    } else if (touchEndX - touchStartX > swipeThreshold) {
+                        // Swipe right
+                        if (carousel.currentPage > 0) {
+                            carousel.currentPage--;
+                            updateCarouselPosition(categoryElement);
+                        }
+                    }
+                }
+            }
+
+            // Recalculate carousel dimensions
+            function recalculateCarousel(categoryElement) {
+                const carousel = carousels.get(categoryElement.id);
+                if (!carousel) return;
+
+                const containerWidth = carousel.container.parentElement.offsetWidth;
+                carousel.itemsPerView = Math.max(1, Math.floor(containerWidth / carousel.itemWidth));
+                carousel.pageCount = Math.ceil(carousel.items.length / carousel.itemsPerView);
+
+                // Ensure current page is valid after recalculation
+                if (carousel.currentPage >= carousel.pageCount) {
+                    carousel.currentPage = Math.max(0, carousel.pageCount - 1);
+                }
+            }
+
+            // Create or update dots
+            function createDots(categoryElement) {
+                const carousel = carousels.get(categoryElement.id);
+                if (!carousel) return;
+
+                const dotsContainer = categoryElement.querySelector('.carousel-dots');
+                dotsContainer.innerHTML = ''; // Clear existing dots
+
+                for (let i = 0; i < carousel.pageCount; i++) {
+                    const dot = document.createElement('div');
+                    dot.classList.add('dot');
+                    if (i === carousel.currentPage) dot.classList.add('active');
+
+                    dot.addEventListener('click', () => {
+                        carousel.currentPage = i;
+                        updateCarouselPosition(categoryElement);
+                    });
+
+                    dotsContainer.appendChild(dot);
+                }
+            }
+
+            // Update carousel position and visual state
+            function updateCarouselPosition(categoryElement) {
+                const carousel = carousels.get(categoryElement.id);
+                if (!carousel) return;
+
+                // Update transform
+                const translateX = carousel.currentPage * carousel.itemsPerView * carousel.itemWidth;
+                carousel.container.style.transform = `translateX(-${translateX}px)`;
+
+                // Update dots
+                const dots = categoryElement.querySelectorAll('.carousel-dots .dot');
+                dots.forEach((dot, index) => {
+                    dot.classList.toggle('active', index === carousel.currentPage);
+                });
+            }
+        });
+
+        // Add this JavaScript to improve the carousel functionality on mobile
+        document.addEventListener("DOMContentLoaded", () => {
+            // Get all carousel containers
+            const carouselContainers = document.querySelectorAll(".carousel-container")
+
+            // Add touch events for mobile swiping
+            carouselContainers.forEach((container) => {
+                let startX, endX
+                const carousel = {
+                    container: container,
+                    items: container.querySelectorAll(".skill-item"),
+                    currentPage: 0,
+                    itemWidth: container.querySelector(".skill-item").offsetWidth + 20, // item width + gap
+                    itemsPerView: Math.floor(
+                        container.parentElement.offsetWidth / (container.querySelector(".skill-item").offsetWidth + 20),
+                    ),
+                    pageCount: Math.ceil(
+                        container.querySelectorAll(".skill-item").length /
+                        Math.floor(container.parentElement.offsetWidth / (container.querySelector(".skill-item").offsetWidth + 20)),
+                    ),
+                }
+
+                // Touch events for mobile swiping
+                container.addEventListener("touchstart", (e) => {
+                    startX = e.touches[0].clientX
+                })
+
+                container.addEventListener("touchend", (e) => {
+                    endX = e.changedTouches[0].clientX
+                    handleSwipe()
+                })
+
+                function handleSwipe() {
+                    const swipeThreshold = 50
+
+                    if (startX - endX > swipeThreshold) {
+                        // Swipe left - next page
+                        if (carousel.currentPage < carousel.pageCount - 1) {
+                            carousel.currentPage++
+                            updateCarouselPosition()
+                        }
+                    } else if (endX - startX > swipeThreshold) {
+                        // Swipe right - previous page
+                        if (carousel.currentPage > 0) {
+                            carousel.currentPage--
+                            updateCarouselPosition()
+                        }
+                    }
+                }
+
+                function updateCarouselPosition() {
+                    const translateX = carousel.currentPage * carousel.itemsPerView * carousel.itemWidth
+                    container.style.transform = `translateX(-${translateX}px)`
+
+                    // Update dots if they exist
+                    const categoryElement = container.closest(".skills-category")
+                    if (categoryElement) {
+                        const dots = categoryElement.querySelectorAll(".carousel-dots .dot")
+                        dots.forEach((dot, index) => {
+                            dot.classList.toggle("active", index === carousel.currentPage)
+                        })
+                    }
+                }
+
+                // Recalculate on window resize
+                window.addEventListener("resize", () => {
+                    carousel.itemsPerView = Math.floor(container.parentElement.offsetWidth / carousel.itemWidth)
+                    carousel.pageCount = Math.ceil(carousel.items.length / carousel.itemsPerView)
+
+                    // Ensure current page is valid after recalculation
+                    if (carousel.currentPage >= carousel.pageCount) {
+                        carousel.currentPage = Math.max(0, carousel.pageCount - 1)
+                    }
+
+                    updateCarouselPosition()
+                })
+            })
+        })
+        // Hamburger 
+        // Add this JavaScript code to implement the hamburger menu functionality
+        document.addEventListener("DOMContentLoaded", () => {
+            // Create the menu toggle button
+            const menuToggle = document.createElement("button")
+            menuToggle.id = "menu-toggle"
+            menuToggle.setAttribute("aria-label", "Toggle menu")
+            menuToggle.innerHTML = '<i class="fas fa-bars"></i>'
+
+            // Get the navigation elements
+            const nav = document.querySelector("nav")
+            const navBrand = nav.querySelector("div:first-child")
+            const navLinks = nav.querySelector("div:last-child")
+
+            // Insert the menu toggle button
+            navBrand.appendChild(menuToggle)
+
+            // Add click event to toggle menu
+            menuToggle.addEventListener("click", function () {
+                navLinks.classList.toggle("show")
+
+                // Change icon based on menu state
+                const icon = this.querySelector("i")
+                if (navLinks.classList.contains("show")) {
+                    icon.classList.remove("fa-bars")
+                    icon.classList.add("fa-times")
+                } else {
+                    icon.classList.remove("fa-times")
+                    icon.classList.add("fa-bars")
+                }
+            })
+
+            // Close menu when clicking on a link
+            const navItems = navLinks.querySelectorAll("a")
+            navItems.forEach((item) => {
+                item.addEventListener("click", () => {
+                    if (window.innerWidth <= 480) {
+                        navLinks.classList.remove("show")
+                        const icon = menuToggle.querySelector("i")
+                        icon.classList.remove("fa-times")
+                        icon.classList.add("fa-bars")
+                    }
+                })
+            })
+
+            // Close menu when clicking outside
+            document.addEventListener("click", (event) => {
+                if (window.innerWidth <= 480 && !nav.contains(event.target) && navLinks.classList.contains("show")) {
+                    navLinks.classList.remove("show")
+                    const icon = menuToggle.querySelector("i")
+                    icon.classList.remove("fa-times")
+                    icon.classList.add("fa-bars")
+                }
+            })
+
+            // Update menu visibility on window resize
+            window.addEventListener("resize", () => {
+                if (window.innerWidth > 480 && navLinks.classList.contains("show")) {
+                    navLinks.classList.remove("show")
+                    const icon = menuToggle.querySelector("i")
+                    icon.classList.remove("fa-times")
+                    icon.classList.add("fa-bars")
+                }
+            })
+        })
+
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+</body>
+
+</html>
